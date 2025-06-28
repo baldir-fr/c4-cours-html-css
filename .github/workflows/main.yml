@@ -33,7 +33,10 @@ jobs:
 
       - name: Build
         run: |
-          nr build:00-intro-objectifs --base /${{github.event.repository.name}}/
+          mkdir -p dist
+          cp index.html dist/
+          nr build:00-intro-objectifs --out dist/00-intro-objectifs --base /${{github.event.repository.name}}/00-intro-objectifs/
+          nr build:01-internet-et-web --out dist/01-internet-et-web --base /${{github.event.repository.name}}/01-internet-et-web/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
