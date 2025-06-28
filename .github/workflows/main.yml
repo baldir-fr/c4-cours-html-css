@@ -34,8 +34,6 @@ jobs:
       - name: Build
         run: |
           nr build:00-intro-objectifs --base /${{github.event.repository.name}}/
-          nr build:01-internet-et-web --base /${{github.event.repository.name}}/01-internet-et-web/
-          
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "build:00-intro-objectifs": "slidev build 00-intro-objectifs.md",
+    "dev:00-intro-objectifs": "slidev --open 00-intro-objectifs.md",
+    "export:00-intro-objectifs": "slidev export 00-intro-objectifs.md",
     "build:01-internet-et-web": "slidev build 01-internet-et-web.md",
     "dev:01-internet-et-web": "slidev --open 01-internet-et-web.md",
     "export:01-internet-et-web": "slidev export 01-internet-et-web.md",
-    "dev:00-intro-objectifs": "slidev --open 00-intro-objectifs.md",
-    "export:00-intro-objectifs": "slidev export 00-intro-objectifs.md",
     "build:demo": "slidev build slides-demo.md",
     "dev:demo": "slidev --open slides-demo.md",
     "export:demo": "slidev export slides-demo.md"
